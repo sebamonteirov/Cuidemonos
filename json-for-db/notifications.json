@@ -1,0 +1,19 @@
+[
+    {
+        "title": "Te invitaron a una reunión",
+        "text": "El usuario de rut 10.829.117-8 te invitó a una reunión para el dia 15-12-2021 a las 08:30. ¿Asistirás a la reunión?",
+        "type": 0
+    },
+    {
+        "title": "Nuevo grupo de trabajo",
+        "text": "La empresa Minera Juanito te agregó al grupo de trabajo grupo de trabajo. ¿Aceptas la invitación?",
+        "type": 0
+    },
+    {
+        "title": "Estuviste cerca de un usuario que reportó estar contagiado de Covid-19",
+        "text": "Puedes revisar el mapa y te recomendamos realizar un test si lo consideras necesario.",
+        "type": 1,
+        "location": [[-33.45025712600764, -70.66468845633825],[-33.449094037800315, -70.66491472333878], [-33.421498139528325, -70.75305193131062]]
+    }
+
+]

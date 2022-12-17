@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
+
+    <!-- Website Title -->
+    <title>Cuidémonos</title>
+    
+    <!-- Styles -->
+	<link href="css/styles.css" rel="stylesheet">
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/d2b3bb300e.js" crossorigin="anonymous"></script>
+	
+	<!-- Favicon  -->
+    <link rel="icon" href="images/favicon.png">
+</head>
+<body class="enter">
+
+    <i class="fas fa-user-nurse"></i>
+
+    <form action="php/login.php" method="POST" class="form_cuenta">
+        <div>
+            <label for="rut">Rut:</label>
+            <input type="text" id="rut" name="rut" placeholder="00000000-0" class="input_text" style="background-color: #4050b7;" autocomplete="off" required>
+            <br><br>
+        </div>
+        <div>
+            <label for="lname">Contraseña:</label>
+            <input type="password" id="pass" name="pass" class="input_text" style="background-color: #4050b7;" required>
+            <br><br>
+        </div>
+        <p style="margin-top: 0.3rem;">¿Olvidaste tu contraseña?</p>
+
+        <div class="button-container">
+            <input type="submit" value="Iniciar Sesion" class="input_boton" style="border: solid 1px white">
+            <input type="button" value="Crear Cuenta" class="input_boton" style="border: solid 1px white" onclick="location.href='register.html'">
+        </div>
+    </form>
+
+    <!--<form action="php/add-contact.php" method="POST" class="form_cuenta" style="display: block;">
+        <input type="submit" value="add contact" class="input_boton" style="border: solid 1px white">
+    </form>-->
+
+    <!--<button onclick="getLocationDate()" width=200 height=100>Mostrar ubicacion</button>
+    <p id="a">ubicacion</p>
+
+    <script>
+        var a = document.getElementById("a");
+
+        function getLocationDate() {
+          if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+          } else {
+            alert("Para que la app funcione correctamente activa tu gps");
+          }
+        }
+        
+        function showPosition(position) {
+
+            lat = position.coords.latitude;
+            lng = position.coords.longitude;
+
+            var date = new Date();
+            var y = date.getFullYear();
+            var m = date.getMonth();
+            var d = date.getDate();
+            var hour = date.getHours();
+            var minute = date.getMinutes();
+            var myDate = y + "-" + m + "-" + d + "-" + hour + "-" + minute;
+
+            a.innerHTML = "Latitude: " + lat + "<br> Longitude: " + lng + "<br> Fecha: " + myDate;
+
+
+            //con la variable xmlhttp creo q la instancia para conectarme con el servidor
+            //Esta es la primera forma que traté de hacerlo con AJJAX pero no funciona idk
+            /*var xmlhttp = new XMLHttpRequest();
+
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    console.log("server funciona");
+                    
+                } else {
+                    console.log("server no funciona");
+                }
+                xmlhttp.open("GET", "php/new-pos-date.php?lat=" + lat + "&lng=" + lng + "&date=" + myDate, true);
+                xmlhttp.send();
+            };*/
+
+            //Segunda manera con AJJAX
+            $.ajax({
+                method: "POST", //Elige get o post
+                url: "php/new-pos-date.php",
+                data: { lat: lat, lng: lng, date: myDate } //parametros que desees enviarles
+                });
+                //.done(function( msg ) {
+                //    alert( "Data Saved: " + msg ); //que hace al acabar el archivo.
+                //});
+            }
+    </script>
+    <script>
+        //Llama a la funcion getLocationDate que envia la posicion, hora y fecha del usuario al servidor llamando al archivo php new-pos-date.php cada 60 segundos
+        setInterval(getLocationDate, 60000); 
+    </script>-->
+</body>
+</html>

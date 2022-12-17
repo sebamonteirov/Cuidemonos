@@ -1,0 +1,17 @@
+{
+    "contactos":
+    [
+        {
+            "latitude": -34.1703,
+            "longitude":-70.740601,
+            "altitude": null,
+            "date": "17-11-2021 12:07"
+        },
+        {
+            "latitude": -34.1703,
+            "longitude":-70.740601,
+            "altitude": null,
+            "date": "17-11-2021 12:07"
+        }
+    ]
+}

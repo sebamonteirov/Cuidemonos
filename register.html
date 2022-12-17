@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
+
+    <!-- Website Title -->
+    <title>Cuidémonos</title>
+    
+    <!-- Styles 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet"> 
+	<link href="css/magnific-popup.css" rel="stylesheet"> -->
+	<link href="css/styles.css" rel="stylesheet">
+
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/d2b3bb300e.js" crossorigin="anonymous"></script>
+	
+	<!-- Favicon  -->
+    <link rel="icon" href="images/favicon.png">
+</head>
+<body class="enter">
+
+    <i class="fas fa-user-nurse"></i>
+
+    <form action="php/register.php" method="POST" class="form_cuenta">
+        <div>
+            <label for="rut">Rut (sin digito verificador):</label>
+            <input type="text" id="rut" name="rut" class="input_text" style="background-color: #4050b7;" required><br><br>
+        </div>
+        <div>
+            <label for="dv">Digito verificador:</label>
+            <input type="text" id="dv" name="dv" class="input_text" style="background-color: #4050b7;" required><br><br>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" class="input_text" style="background-color: #4050b7;" required><br><br>
+        </div>
+        <div>
+            <label for="pass">Contraseña:</label>
+            <input type="text" id="pass" name="pass" class="input_text" style="background-color: #4050b7;" required><br><br>
+        </div>
+        <div>
+            <label for="cfpass">Confirmar Contraseña:</label>
+            <input type="text" id="cfpass" name="cfpass" class="input_text" style="background-color: #4050b7;" required><br><br>
+        </div>
+
+        <div class="button-container">
+            <input type="button" value="Iniciar Sesion" class="input_boton" style="border: solid 1px white" onclick="location.href='index.html'">
+            <input type="submit" value="Crear Cuenta" class="input_boton" style="border: solid 1px white">
+        </div>
+    </form>
+</body>
+</html>

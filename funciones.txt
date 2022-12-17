@@ -1,0 +1,9 @@
+> Trazabilidad
+    > Guardar posición del usuario con fecha
+    > Darle la opcion al usuario de notificar que está infectado
+        > Comparar las posiciones de cada usuario (que estuvo en las comunas donde el infectado notificó haber tenido contacto estrecho) con las posiciones del usuario infectado y notificarlo si una o más coinciden junto con la fecha.
+        > Notificar a un usuario si alguna posicion y fecha suya coincide con la de un usuario infectado
+            > Mostrar en un mapa las posiciones que coinciden en donde pueden haber estado en contacto
+> Feed
+    > Mostrar cifras relacionadas a la pandemia
+    > Mostrar noticias relacionadas a la pandemia

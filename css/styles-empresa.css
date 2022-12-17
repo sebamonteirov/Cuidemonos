@@ -1,0 +1,65 @@
+/* PANTALLA INICIO SESION EMPRESA empresa/index.html*/
+body.empresa {
+    background-image: url(../images/empresa.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+.empresa div.form_container {
+    display: block;
+    overflow: auto;
+    width: min(450px, 87.5vw);
+    height: auto;
+    margin: 37.5vh auto 0px auto;
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 16px;
+}
+
+.form_container form {
+    width: 87.5%;
+    margin: auto;
+}
+
+.form_container i {
+    font-size: 40px;
+    width: 100px;
+    text-align: center;
+    display: block;
+    margin: 16px auto;
+}
+
+.form_container form input {
+    display: block;
+    width: 100%;
+    height: 2rem;
+    font-size: auto;
+    border-radius: 8px;
+    border: none;
+    margin: 0px 0px 1rem 0px;
+    background-color: #fff;
+}
+
+.form_container form .button-container input{
+    box-sizing: border-box;
+    display: inline;
+    width: 40%;
+    margin: 0px 4% 1rem 4%;
+}
+
+/* BASE PANTALLA PARA EMPRESA */
+
+body.empresa_data {
+    background-color: #fff;
+}
+
+
+
+/* PANTALLA DASHBOARD empresa/dashboard.html */
+

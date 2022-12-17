@@ -1,0 +1,650 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
+
+.loader_container {
+	background-color: #212121;
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.loader {
+	border: 16px solid #f3f3f3; /* Light grey */
+	border-top: 16px solid #3498db; /* Blue */
+	border-radius: 50%;
+	width: 15vh;
+	height: 15vh;
+	animation: spin 2s linear infinite;
+	z-index: 99;
+
+	position: absolute;
+    top: 30vh;
+    left: 30%;
+    /*transform: translate(-50%, -40vh);*/
+  }
+  
+  @keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+  }
+
+body {
+	font-size: 16px;
+	margin: 0px;
+	background-color: #000;
+	color: #fff;
+	font-family: 'Urbanist', sans-serif;
+	/* overflow: hidden; */
+}
+
+/* TOP BAR */
+.top-bar {
+	background-color: #4050b7;
+	color: #fff;
+	height: 3rem;
+	width: 100%;
+	margin: 0px;
+	border: 0px;
+	border-bottom: 1px solid #fff;
+	box-sizing: border-box;
+
+	display: block; /* default display block*/
+	position: sticky;
+	top: 0px;
+	right: 0px;
+}
+
+.top-bar h1 {
+	font-size: 1.5rem;
+	display: inline-block;
+	margin: 0px 0px 0px 0rem;
+	padding: 0px;
+	line-height: 3rem;
+}
+
+.reportar {
+	height: 3rem;
+	width: 3rem;
+
+	border-radius: 0px;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+
+	display: inline-block;
+
+	background-color: red;
+	color: #fff;
+}
+
+/* BOTTOM BAR */
+.bottom-bar {
+	box-sizing: border-box;
+	background-color: #000;
+	color: #fff;
+	height: 3rem;
+	width: 100vw;
+	margin: 0px;
+	border: 0px;
+	border-top: 1px solid #fff;
+
+	display: block; /* default display block*/
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+}
+
+.bottom-bar button {
+	box-sizing: border-box;
+	height: 3rem;
+	width: 19vw;
+
+	border-radius: 0px;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+
+	display: inline-block;
+	position: static;
+
+	background-color: #000;
+	color: #fff;
+}
+
+.red-circle {
+	width: 1rem;
+	height: 1rem;
+	background-color: red;
+	border-radius: 50%;
+
+	position: absolute;
+	top: 25%;
+	left: 30%;
+
+	color: #fff;
+	font-family: 'Urbanist', sans-serif;
+	font-size: 0.7rem;
+	line-height: 1rem;
+	text-align: center;
+}
+
+/* PANTALLA PRINCIPAL */
+
+.datos {
+	width: 100%;
+	display: block;
+	margin: 0.75rem 0rem 0rem 0rem;
+}
+
+.datos h1 {
+	margin: 0px 0px 0.25rem 6.25vw;
+	padding: 0px;
+}
+
+.datos-card-container {
+	width: 100%;
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card-datos {
+	width: 25vw;
+	background-color: rgb(46, 46, 46);
+	color: #fff;
+	text-align: center;
+	border-radius: 16px;
+}
+
+.logo-dato {
+
+}
+
+.nombre-dato {
+
+}
+
+.numero-dato {
+
+}
+
+.seccion_noticia {
+	margin-bottom: 3rem;
+}
+
+.noticia {
+	box-sizing: border-box;
+	width: 87.5vw;
+	height: auto;
+
+	background-color: rgb(46, 46, 46);
+	margin: 0.75rem auto 0px auto;
+	border-radius: 16px;
+	overflow: hidden;
+}
+
+.noticia .img {
+	width: 87.5vw;
+	height: 35vw;
+
+	margin: 0px;
+	border-radius: 0px;
+
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+
+.noticia h1 {
+	box-sizing: border-box;
+	height: 13.14vw;
+	padding: 8px 16px;
+	margin: 0px;
+	font-size: 1.7rem;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.noticia p {
+	padding: 0px 16px 8px 16px;
+	margin: 0px;
+	text-align: justify;
+	
+	white-space: nowrap;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+}
+
+/* PANTALLA REPORTAR CONTAGIO NEW_CONTAGION.HTML*/
+
+.tab p {
+	/*display: flex;*/
+}
+
+.tab p label {
+	height: 4rem;
+	line-height: 4rem;
+}
+
+.tab p input {
+	height: 2rem;
+	width: 2rem;
+	margin: 1rem 1rem 1rem 0rem;
+	border-radius: 0px;
+	border: 0px;
+	background-color: #fff;
+}
+
+.tab p input:checked {
+	background-color: rgb(0, 238, 255);
+}
+
+.tab p input:hover {
+	background-color: rgb(148, 148, 148);
+}
+
+/* Style the form */
+#regForm {
+	background-color: #000000;
+	margin: 0.75rem auto;
+	padding: 6.25vw;
+  }
+  
+  /* Style the input fields */
+  .tab input, .tab select {
+	box-sizing: border-box;
+	padding: 10px;
+	width: 87.5vw;
+	font-size: 17px;
+	border: 1px solid #aaaaaa;
+  }
+  
+  /* Mark input boxes that gets an error on validation: */
+  input.invalid {
+	background-color: #ffdddd;
+  }
+  
+  /* Hide all steps by default: */
+  .tab {
+	display: none;
+  }
+  
+  /* Make circles that indicate the steps of the form: */
+  .step {
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbbbbb;
+	border: none;
+	border-radius: 50%;
+	display: inline-block;
+	opacity: 0.5;
+  }
+  
+  /* Mark the active step: */
+  .step.active {
+	opacity: 1;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+	background-color: #4050b7;
+  }
+
+  /*Boton next y prev*/
+  .btn-prev-nxt{
+	box-sizing: border-box;
+	padding: 10px;
+	width: 87.5vw;
+	font-size: 17px;
+	border: 1px solid #aaaaaa;
+	margin: 0.5rem 0px;
+  }
+
+/* PANTALLA CUENTA */
+
+.img_perfil {
+	border-radius: 50%;
+	width: 30vw;
+	height: auto;
+	margin: 32px auto 16px auto;
+	display: block;
+}
+
+.codigo {
+	text-align: center;
+	display: block;
+	font-size: 0.8rem;
+}
+
+.form_cuenta {
+	display: block;
+	width: 87.5vw;
+	margin: auto;
+}
+
+.form_cuenta div {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+
+	margin-bottom: 0.5rem;
+
+	height: 1.5rem;
+	line-height: 1.5rem;
+}
+
+.form_cuenta label {
+	font-size: 1rem;
+	width: 100%;
+	overflow: visible;
+}
+
+.form_cuenta .input_text{
+	background-color: #000;
+	width: 100%;
+	border: 0px;
+	border-bottom: 1px solid #fff;
+	color: #fff;
+
+	padding: 0px;
+	margin: 0px;
+}
+
+.form_cuenta .button-container {
+	display: block;
+	width: 60vw;
+	height: auto;
+	margin: auto;
+}
+
+.form_cuenta .input_boton {
+	width: 29vw;
+	margin: 16px auto;
+	padding: 1rem 0px;
+	border: 1px solid #4050b7;
+	background-color: #4050b7;
+	color: #fff;
+	display: inline-block;
+}
+
+.map-recorrido {
+	width: 87.5vw;
+	height: 15rem;
+	margin: auto auto 1rem auto;
+
+	background-image: url(../images/mapa.jpg);
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+	border-radius: 16px;
+}
+
+.form_ets {
+	width: 87.5vw;
+	display: block;
+	margin: 0px auto 4rem auto;
+	padding: 0px;
+	border: 0px;
+}
+
+.form_ets p {
+	text-align: justify;
+	margin: 0px 0px 1rem 0px;
+}
+
+.form_ets .input_text {
+	background-color: #000;
+	width: auto;
+	border: 0px;
+	border-bottom: 1px solid #fff;
+	color: #fff;
+
+	padding: 0px;
+	margin: 0px;
+}
+
+.form_ets .input_boton {
+	margin: 16px auto;
+	padding: 1rem;
+	border: 1px solid #4050b7;
+	background-color: #4050b7;
+	color: #fff;
+	display: block;
+}
+
+/* PANTALLA INICIAR SESION */
+
+body.enter {
+	background-color: #4050b7;
+}
+
+.enter i {
+	font-size: 20vw;
+	display: block;
+	width: 20vw;
+	margin: 5vw auto;
+}
+
+/* PANTALLA NOTIFICACIONES notifications.html*/
+
+.notificacion {
+	box-sizing: border-box;
+	width: 100vw;
+	height: auto;
+
+	background-color: rgb(46, 46, 46);
+	margin: 0.75rem auto 0px auto;
+	overflow: hidden;
+}
+
+.notificacion .contenido {
+	display: flex;
+	flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.notificacion .contenido div {
+	box-sizing: border-box;
+}
+
+.notificacion .contenido div.logo {
+	width: 30%;
+	line-height: 30vw;
+	padding: 8px 0px 8px 0px;
+	text-align: center;
+}
+.notificacion .contenido div.texto {
+	width: 70%;
+	height: auto;
+	padding: 8px 16px 8px 0;
+}
+
+.notificacion .contenido div.texto h1{
+	font-size: 1.1rem;
+	margin: 0px;
+}
+
+.notificacion .contenido div.texto p{
+	font-size: 0.8rem;
+	margin: 0px;
+}
+
+.opciones_noti {
+	box-sizing: border-box;
+	width: 100%;
+	height: 2rem;
+}
+
+.opciones_noti form {
+	display: flex;
+	flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.opciones_noti form input{
+	box-sizing: border-box;
+	width: 49.9%;
+	height: 2rem;
+	line-height: 2rem;
+	border: 0px solid #fff;
+	border-radius: 0px;
+}
+
+.a {
+	background-color: rgb(21, 255, 0);
+}
+.d {
+	background-color: rgb(253, 38, 38);
+}
+
+.map {
+	box-sizing: border-box;
+	width: 100%;
+	height: 2rem;
+	line-height: 2rem;
+	border: 1px solid #fff;
+	border-radius: 0px;
+	border: 0px;
+	background-color: rgb(255, 251, 0);
+}
+
+.map_en_pag-map {
+	height: 3rem;
+	font-size: 1rem;
+}
+
+#googleMap {
+	width: 100vw;
+	height: calc(100vh - 9rem);
+}
+
+/* PANTALLA NEW REUNION new_reunion.html*/
+.new_reunion {
+	box-sizing: border-box;
+	width: 87.5vw;
+	height: auto;
+
+	background-color: rgb(46, 46, 46);
+	margin: 0.75rem auto 0px auto;
+	border-radius: 16px;
+	overflow: hidden;
+	padding: 8px 16px;
+}
+
+.new_reunion h2 {
+	margin: 0px 0px 8px 0px;
+}
+
+.new_reunion form{
+	box-sizing: border-box;
+	display: flex;
+    flex-direction: column;
+}
+
+.new_reunion form div {
+	display: flex;
+    margin: 0px 0px 0.8rem 0px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.new_reunion form div div.label {
+	box-sizing: border-box;
+	width: calc((87.5vw - 32px) * 0.4);
+	height: 1.5rem;
+	line-height: 1.5rem;
+	font-size: 1rem;
+	display: inline;
+}
+
+.new_reunion form div input {
+	box-sizing: border-box;
+	width: calc((87.5vw - 32px) * 0.6);
+	height: 1.5rem;
+	font-size: 1rem;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #000;
+	color: #fff;
+	border-width: 0px;
+	border-bottom: 1px solid #fff;
+	display: inline;
+	float: right;
+	text-align: left;
+}
+
+.new_reunion form div select {
+	box-sizing: border-box;
+	width: calc((87.5vw - 32px) * 0.6);
+	height: 1.5rem;
+	font-size: 1rem;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #000;
+	color: #fff;
+	border-width: 0px;
+	border-bottom: 1px solid #fff;
+	display: inline;
+	float: right;
+	text-align: left;
+}
+
+textarea {
+	box-sizing: border-box;
+	width: calc((87.5vw - 32px) * 0.4);
+	height: 1.5rem;
+	font-size: 1rem;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #000;
+	color: #fff;
+	border-width: 0px;
+	border-bottom: 1px solid #fff;
+	display: inline;
+	float: right;
+	overflow-x: auto;
+	overflow-y: auto;
+	text-align: left;
+}
+
+#i_height {
+	height: 5rem;
+}
+
+.button_new_reunion {
+	box-sizing: border-box;
+	width: 30vw !important;
+	padding: 1rem 0px;
+	margin: 0px auto 0.8rem auto;
+    border: 1px solid #4050b7 !important;
+    background-color: #4050b7 !important;
+    color: #fff;
+	font-size: 1rem !important;
+}
+
+.new_reunion form p {
+	box-sizing: border-box;
+	margin: 0px 0px 0.9rem 0px;
+	width: 100%;
+	text-align: center;
+}
+
+.reunion {
+	box-sizing: border-box;
+	width: 87.5vw;
+	margin: 0.75rem auto 0px auto;
+	border-radius: 16px;
+}
+
+.logo_reunion {
+	line-height: 0px !important;
+	padding: 1.2rem 0px 1.2rem 0px;
+}
+/* Para mostrar el historial de reuniones usé los estilos de notificaciones*/
