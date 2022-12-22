@@ -8,7 +8,7 @@ if ($_POST['g-recaptcha-response'] == '') {
 else 
 {
     $obj = new stdClass();
-    $obj->secret = "6LfRSNISAAAAACKaHw2e-JvgeG-3src_dRGpL-Ql";
+    $obj->secret = "CODIGO";
     $obj->response = $_POST['g-recaptcha-response'];
     $obj->remoteip = $_SERVER['REMOTE_ADDR'];
     $url = 'https://www.google.com/recaptcha/api/siteverify';
